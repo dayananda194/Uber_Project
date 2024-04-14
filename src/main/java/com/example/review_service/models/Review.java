@@ -1,14 +1,14 @@
 package com.example.review_service.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 
-public class Review {
+public class Review extends BaseModel{
 
-    @Id
-    Long Id;
+    protected  String content;
+
+    protected String rating;
 
 
 }
